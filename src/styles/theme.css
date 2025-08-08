@@ -1,0 +1,193 @@
+/* theme.css */
+
+/* Base styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212; /* very dark black */
+  color: #f5f5f5; /* light gray for text */
+}
+
+/* Container for content */
+.container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0 20px 40px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Pushes brand left and nav right */
+  align-items: center;            /* Vertically centers items */
+  padding: 0.5rem 2rem;           /* Reduce padding for smaller height */
+  background-color: black;
+  color: white;
+  height: 50px;                   /* Control navbar height */
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.25rem;             /* Slightly smaller font */
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-nav {
+  display: flex;
+  gap: 1.5rem;                   /* Space between links */
+  font-size: 1rem;               /* Normal font size */
+}
+
+.navbar-nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-nav a:hover {
+  text-decoration: underline;
+}
+
+/* Home Page Styles */
+.home-container {
+  text-align: center;
+  padding: 80px 20px 40px;
+}
+
+.home-container h1 {
+  font-size: 3rem;
+  margin-bottom: 16px;
+  color: #ff6f00;
+}
+
+.home-container p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #ddd;
+}
+
+.get-started-btn {
+  background-color: #ff6f00;
+  border: none;
+  padding: 14px 36px;
+  color: #121212;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(255, 111, 0, 0.5);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.get-started-btn:hover {
+  background-color: #e65c00;
+  box-shadow: 0 6px 16px rgba(230, 92, 0, 0.7);
+}
+
+/* About and Contact Pages */
+.page-container {
+  padding: 40px 20px;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto 60px;
+}
+
+.page-container h2 {
+  color: #ff6f00;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.page-container p,
+.page-container address {
+  font-size: 1.1rem;
+  color: #ddd;
+  white-space: pre-line;
+}
+
+/* Buttons used in Dashboard and elsewhere */
+button {
+  background-color: #ff6f00;
+  border: none;
+  color: #121212;
+  padding: 10px 20px;
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+
+button:hover {
+  background-color: #e65c00;
+}
+
+/* loc-card styling from your dashboard */
+.loc-card {
+  background-color: #1f1f1f;
+  border: 1.5px solid #ff6f00;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 24px;
+  color: #eee;
+  box-shadow: 0 2px 10px rgba(255, 111, 0, 0.3);
+}
+
+.loc-card input {
+  width: 95%;
+  margin: 10px 0;
+  padding: 12px 14px;
+  border-radius: 6px;
+  border: 1px solid #ff6f00;
+  background-color: #121212;
+  color: #f5f5f5;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.loc-card input:focus {
+  border-color: #ffa040;
+  box-shadow: 0 0 6px #ff6f00;
+}
+
+/* Section title */
+.section-title {
+  color: #ff6f00;
+  margin-top: 40px;
+  margin-bottom: 16px;
+  border-bottom: 2px solid #ff6f00;
+  padding-bottom: 6px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  user-select: none;
+}
+
+/* Center align helper */
+center {
+  display: block;
+  text-align: center;
+  margin: 16px 0;
+}
+
+/* Scrollbar styling (optional) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #121212;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ff6f00;
+  border-radius: 10px;
+  border: 2px solid #121212;
+}
