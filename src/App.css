@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
+body {
+  background-color: #0f0f0f;
+  color: #ffffff;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1, h2 {
+  color: #ff7a00;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+button {
+  background-color: #ff7a00;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  margin: 5px 0;
+  margin-right: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #e66a00;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input {
+  background-color: #1a1a1a;
+  color: #fff;
+  border: 1px solid #444;
+  padding: 8px;
+  border-radius: 4px;
+  margin: 5px;
+  width: 95%;
+}
+
+input::placeholder {
+  color: #888;
+}
+
+.loc-card {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 8px rgba(255, 122, 0, 0.2);
+}
+
+.section-title {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  color: #ff7a00;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #333;
+  margin: 20px 0;
 }
